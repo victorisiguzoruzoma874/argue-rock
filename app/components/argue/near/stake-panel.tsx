@@ -127,7 +127,7 @@ export function StakePanel({ competitionId }: { competitionId: string }) {
   const canStake = !!mySide && !myView?.recordedAccount && (!pool || (pool.status === "Open" && !(mySide === "A" ? pool.side_a : pool.side_b)));
   const tx = (hash: string) => `${config.explorerUrl}/txns/${hash}`;
 
-  async function onConnect(walletId: "my-near-wallet" | "meteor-wallet") {
+  async function onConnect(walletId: "my-near-wallet") {
     setBusy("connect");
     try {
       setAccount(await connect(network, walletId));
@@ -255,9 +255,6 @@ export function StakePanel({ competitionId }: { competitionId: string }) {
             <div className="flex flex-wrap items-center gap-2">
               <Button variant="primary" onClick={() => void onConnect("my-near-wallet")} loading={busy === "connect"}>
                 <Wallet aria-hidden className="size-4" /> Connect MyNearWallet
-              </Button>
-              <Button variant="secondary" onClick={() => void onConnect("meteor-wallet")} disabled={busy !== null}>
-                Meteor Wallet
               </Button>
             </div>
           ) : (

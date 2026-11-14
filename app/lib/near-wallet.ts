@@ -11,12 +11,12 @@ export type NearNetwork = "testnet" | "mainnet";
 export function getSelector(network: NearNetwork): Promise<WalletSelector> {
   if (typeof window === "undefined") return Promise.reject(new Error("The NEAR wallet only runs in the browser."));
   selectorPromise ??= (async () => {
-    const [{ setupWalletSelector }, { setupMyNearWallet }, { setupMeteorWallet }] = await Promise.all([
+    // MyNearWallet only: the Meteor Wallet SDK still imports near-api-js v5's `utils`, which v7 removed.
+    const [{ setupWalletSelector }, { setupMyNearWallet }] = await Promise.all([
       import("@near-wallet-selector/core"),
       import("@near-wallet-selector/my-near-wallet"),
-      import("@near-wallet-selector/meteor-wallet"),
     ]);
-    return setupWalletSelector({ network, modules: [setupMyNearWallet(), setupMeteorWallet()] });
+    return setupWalletSelector({ network, modules: [setupMyNearWallet()] });
   })();
   return selectorPromise;
 }
@@ -29,7 +29,7 @@ export async function signedInAccount(network: NearNetwork): Promise<string | nu
   return first?.accountId ?? null;
 }
 
-export async function connect(network: NearNetwork, walletId: "my-near-wallet" | "meteor-wallet"): Promise<string | null> {
+export async function connect(network: NearNetwork, walletId: "my-near-wallet"): Promise<string | null> {
   const selector = await getSelector(network);
   const wallet = await selector.wallet(walletId);
   // eslint-disable-next-line @typescript-eslint/no-explicit-any

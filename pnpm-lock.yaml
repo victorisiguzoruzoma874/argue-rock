@@ -361,6 +361,310 @@ importers:
         specifier: ^4.1.5
         version: 4.1.12(@opentelemetry/api@1.10.0)(@types/node@24.19.2)(happy-dom@20.12.0)(vite@8.1.0(@types/node@24.19.2)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1))
 
+  R:/argue-it-agent:
+    dependencies:
+      '@agent-native/agentkit':
+        specifier: ^0.222.2
+        version: 0.222.2
+      '@agent-native/core':
+        specifier: 0.222.2
+        version: 0.222.2(629a85e1bc84ed50ed605d6790952c15)
+      '@agent-native/otel':
+        specifier: latest
+        version: 0.1.39(@agent-native/core@0.222.2(629a85e1bc84ed50ed605d6790952c15))
+      '@agent-native/toolkit':
+        specifier: ^0.222.2
+        version: 0.222.2(04a3694608617a6808be24db1bee2ccd)
+      '@ai-sdk/anthropic':
+        specifier: ^3.0.71
+        version: 3.0.137(zod@4.6.7)
+      '@ai-sdk/cohere':
+        specifier: ^3.0.39
+        version: 3.0.74(zod@4.6.7)
+      '@ai-sdk/google':
+        specifier: ^3.0.64
+        version: 3.0.140(zod@4.6.7)
+      '@ai-sdk/groq':
+        specifier: ^3.0.35
+        version: 3.0.80(zod@4.6.7)
+      '@ai-sdk/mistral':
+        specifier: ^3.0.40
+        version: 3.0.78(zod@4.6.7)
+      '@ai-sdk/openai':
+        specifier: ^3.0.53
+        version: 3.0.135(zod@4.6.7)
+      '@anthropic-ai/sdk':
+        specifier: ^1.3.0
+        version: 1.3.0(zod@4.6.7)
+      '@electric-sql/pglite':
+        specifier: ^0.5.8
+        version: 0.5.14
+      '@fontsource-variable/inter':
+        specifier: ^5.2.8
+        version: 5.3.0
+      '@fontsource/barlow-condensed':
+        specifier: ^5.3.0
+        version: 5.3.0
+      '@near-wallet-selector/core':
+        specifier: ^10.1.4
+        version: 10.1.4(@near-js/keystores@2.2.5(@near-js/crypto@2.5.1(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1)))(@near-js/types@2.5.1))(@near-js/utils@2.5.1(@near-js/types@2.5.1))
+      '@near-wallet-selector/my-near-wallet':
+        specifier: ^10.1.4
+        version: 10.1.4(@near-js/keystores@2.2.5(@near-js/crypto@2.5.1(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1)))(@near-js/types@2.5.1))(@near-js/signers@2.5.1(@near-js/crypto@2.5.1(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1)))(@near-js/keystores@2.2.5(@near-js/crypto@2.5.1(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1)))(@near-js/types@2.5.1))(@near-js/transactions@2.5.1(@near-js/crypto@2.5.1(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1)))(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1))))(@near-js/tokens@2.5.1)(@near-js/types@2.5.1)
+      '@openrouter/ai-sdk-provider':
+        specifier: ^2.9.1
+        version: 2.10.0(ai@6.0.258(zod@4.6.7))(zod@4.6.7)
+      '@polymarket/client':
+        specifier: 0.14.0
+        version: 0.14.0(typescript@7.0.2)(viem@2.57.16(typescript@7.0.2)(zod@4.6.7))
+      '@react-router/dev':
+        specifier: 8.1.0
+        version: 8.1.0(react-router@8.1.0(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(typescript@7.0.2)(vite@8.1.0(@types/node@24.19.2)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1))
+      '@react-router/fs-routes':
+        specifier: 8.1.0
+        version: 8.1.0(@react-router/dev@8.1.0(react-router@8.1.0(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(typescript@7.0.2)(vite@8.1.0(@types/node@24.19.2)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1)))(typescript@7.0.2)
+      '@tabler/icons-react':
+        specifier: 3.44.0
+        version: 3.44.0(react@19.3.1)
+      '@tanstack/react-query':
+        specifier: ^5.99.2
+        version: 5.105.2(@types/react@19.3.0)(react@19.3.1)
+      ai:
+        specifier: 6.0.258
+        version: 6.0.258(zod@4.6.7)
+      ai-sdk-ollama:
+        specifier: ^3.8.8
+        version: 3.8.8(ai@6.0.258(zod@4.6.7))(zod@4.6.7)
+      date-fns:
+        specifier: ^4.4.0
+        version: 4.4.0
+      drizzle-orm:
+        specifier: ^0.45.3
+        version: 0.45.4(@electric-sql/pglite@0.5.14)(@neondatabase/serverless@1.2.0)(@opentelemetry/api@1.10.0)(kysely@0.29.8)(postgres@3.4.9)
+      h3:
+        specifier: ^2.0.1
+        version: 2.0.8(crossws@0.4.17(srvx@1.0.8))(ocache@0.3.1)
+      isbot:
+        specifier: ^5
+        version: 5.2.2
+      lucide-react:
+        specifier: ^1.66.0
+        version: 1.66.0(@types/react@19.3.0)(react@19.3.1)
+      near-api-js:
+        specifier: ^7.5.3
+        version: 7.5.3
+      node-pty:
+        specifier: ^1.1.0
+        version: 1.1.0
+      postgres:
+        specifier: ^3.4.9
+        version: 3.4.9
+      react:
+        specifier: ^19.2.7
+        version: 19.3.1
+      react-dom:
+        specifier: ^19.2.7
+        version: 19.3.1(react@19.3.1)
+      react-router:
+        specifier: 8.1.0
+        version: 8.1.0(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      use-sync-external-store:
+        specifier: ^1.6.0
+        version: 1.7.0(react@19.3.1)
+      viem:
+        specifier: 2.57.16
+        version: 2.57.16(typescript@7.0.2)(zod@4.6.7)
+      vite:
+        specifier: 8.1.0
+        version: 8.1.0(@types/node@24.19.2)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1)
+      zod:
+        specifier: ^4.4.3
+        version: 4.6.7
+      zustand:
+        specifier: ^5.0.15
+        version: 5.0.16(@types/react@19.3.0)(immer@11.2.9)(react@19.3.1)(use-sync-external-store@1.7.0(react@19.3.1))
+    devDependencies:
+      '@playwright/test':
+        specifier: ^1.64.1
+        version: 1.64.1
+      '@radix-ui/react-accordion':
+        specifier: ^1.2.12
+        version: 1.3.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@radix-ui/react-alert-dialog':
+        specifier: ^1.1.15
+        version: 1.2.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@radix-ui/react-aspect-ratio':
+        specifier: ^1.1.8
+        version: 1.2.0(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@radix-ui/react-avatar':
+        specifier: ^1.1.11
+        version: 1.3.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@radix-ui/react-checkbox':
+        specifier: ^1.3.2
+        version: 1.4.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@radix-ui/react-collapsible':
+        specifier: ^1.1.12
+        version: 1.2.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@radix-ui/react-context-menu':
+        specifier: ^2.2.16
+        version: 2.4.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@radix-ui/react-dialog':
+        specifier: ^1.1.14
+        version: 1.3.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@radix-ui/react-dropdown-menu':
+        specifier: ^2.1.15
+        version: 2.2.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@radix-ui/react-hover-card':
+        specifier: ^1.1.15
+        version: 1.2.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@radix-ui/react-label':
+        specifier: ^2.1.7
+        version: 2.1.17(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@radix-ui/react-menubar':
+        specifier: ^1.1.16
+        version: 1.2.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@radix-ui/react-navigation-menu':
+        specifier: ^1.2.14
+        version: 1.4.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@radix-ui/react-popover':
+        specifier: ^1.1.14
+        version: 1.3.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@radix-ui/react-progress':
+        specifier: ^1.1.8
+        version: 1.2.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@radix-ui/react-radio-group':
+        specifier: ^1.3.7
+        version: 1.5.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@radix-ui/react-scroll-area':
+        specifier: ^1.2.9
+        version: 1.4.0(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@radix-ui/react-select':
+        specifier: ^2.2.5
+        version: 2.4.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@radix-ui/react-separator':
+        specifier: ^1.1.7
+        version: 1.2.0(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@radix-ui/react-slider':
+        specifier: ^1.3.5
+        version: 1.6.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@radix-ui/react-slot':
+        specifier: ^1.2.3
+        version: 1.5.0(@types/react@19.3.0)(react@19.3.1)
+      '@radix-ui/react-switch':
+        specifier: ^1.2.5
+        version: 1.4.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@radix-ui/react-tabs':
+        specifier: ^1.1.12
+        version: 1.2.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@radix-ui/react-toast':
+        specifier: ^1.2.15
+        version: 1.3.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@radix-ui/react-toggle':
+        specifier: ^1.1.10
+        version: 1.2.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@radix-ui/react-toggle-group':
+        specifier: ^1.1.11
+        version: 1.2.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@radix-ui/react-tooltip':
+        specifier: ^1.2.7
+        version: 1.4.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@tailwindcss/typography':
+        specifier: ^0.5.20
+        version: 0.5.20(tailwindcss@4.3.3)
+      '@tailwindcss/vite':
+        specifier: ^4.2.4
+        version: 4.3.3(vite@8.1.0(@types/node@24.19.2)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1))
+      '@testing-library/dom':
+        specifier: ^10.4.2
+        version: 10.4.2
+      '@testing-library/jest-dom':
+        specifier: ^7.0.1
+        version: 7.0.1(@testing-library/dom@10.4.2)(vitest@4.1.12(@opentelemetry/api@1.10.0)(@types/node@24.19.2)(happy-dom@20.12.0)(vite@8.1.0(@types/node@24.19.2)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1)))
+      '@testing-library/react':
+        specifier: ^16.3.3
+        version: 16.3.3(@testing-library/dom@10.4.2)(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@testing-library/user-event':
+        specifier: ^14.6.8
+        version: 14.6.8(@testing-library/dom@10.4.2)
+      '@types/node':
+        specifier: ^24.2.1
+        version: 24.19.2
+      '@types/react':
+        specifier: ^19.2.14
+        version: 19.3.0
+      '@types/react-dom':
+        specifier: ^19.2.3
+        version: 19.3.0(@types/react@19.3.0)
+      '@xterm/addon-fit':
+        specifier: ^0.11.0
+        version: 0.11.0
+      '@xterm/addon-web-links':
+        specifier: ^0.12.0
+        version: 0.12.0
+      '@xterm/xterm':
+        specifier: ^6.0.0
+        version: 6.0.0
+      class-variance-authority:
+        specifier: ^0.7.1
+        version: 0.7.1
+      clsx:
+        specifier: ^2.1.1
+        version: 2.1.1
+      cmdk:
+        specifier: ^1.1.1
+        version: 1.1.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      dotenv:
+        specifier: ^18.0.9
+        version: 18.0.9
+      drizzle-kit:
+        specifier: ^0.31.11
+        version: 0.31.11
+      embla-carousel-react:
+        specifier: ^8.6.0
+        version: 8.6.0(react@19.3.1)
+      happy-dom:
+        specifier: 20.12.0
+        version: 20.12.0
+      input-otp:
+        specifier: ^1.4.2
+        version: 1.5.0(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      next-themes:
+        specifier: ^0.4.6
+        version: 0.4.6(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      oxfmt:
+        specifier: 0.56.0
+        version: 0.56.0
+      react-day-picker:
+        specifier: ^9.14.0
+        version: 9.14.0(react@19.3.1)
+      react-hook-form:
+        specifier: ^7.71.2
+        version: 7.91.0(@types/react@19.3.0)(react@19.3.1)
+      react-resizable-panels:
+        specifier: ^4.10.0
+        version: 4.16.1(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      sonner:
+        specifier: ^2.0.7
+        version: 2.0.8(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      tailwind-merge:
+        specifier: ^3.5.0
+        version: 3.7.0
+      tailwindcss:
+        specifier: ^4.2.4
+        version: 4.3.3
+      tsx:
+        specifier: ^4.20.3
+        version: 4.23.15
+      typescript-7:
+        specifier: npm:typescript@^7.0.2
+        version: typescript@7.0.2
+      vaul:
+        specifier: ^1.1.2
+        version: 1.1.2(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      vitest:
+        specifier: ^4.1.5
+        version: 4.1.12(@opentelemetry/api@1.10.0)(@types/node@24.19.2)(happy-dom@20.12.0)(vite@8.1.0(@types/node@24.19.2)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1))
+
 packages:
 
   '@adobe/css-tools@4.5.0':
@@ -514,6 +818,11 @@ packages:
     resolution: {integrity: sha512-4skVmu9dYvIxC+S+YA8zbUJNFwTmQsyheyjjQ1hu7pFScuhq+YMCedNOkuUqTDbIQHdJ+bBNhESTe0KkL5TOmg==}
     peerDependencies:
       '@agent-native/core': '>=0.200.0'
+
+  '@agent-native/otel@0.1.39':
+    resolution: {integrity: sha512-kdlFXoYEwenvzWye/0nx4tjuO6erCQJMo8M/D13nu3nEcHNkokVDNYkNxYUOZuYO16Rmkr0sfK/7KPZ79m9FUg==}
+    peerDependencies:
+      '@agent-native/core': '>=0.228.2-0'
 
   '@agent-native/recap-cli@0.5.93':
     resolution: {integrity: sha512-TBblwAYqoGqNTSGVoK4ybh5EpKWJXNd330tN0IBH2RzPv2G2xtEmi4BKwK61grg/JhxK8WOBH1kabchXIZXiSw==}
@@ -6698,6 +7007,17 @@ snapshots:
       '@opentelemetry/sdk-metrics': 2.12.0(@opentelemetry/api@1.10.0)
       '@opentelemetry/sdk-trace-base': 2.12.0(@opentelemetry/api@1.10.0)
 
+  '@agent-native/otel@0.1.39(@agent-native/core@0.222.2(629a85e1bc84ed50ed605d6790952c15))':
+    dependencies:
+      '@agent-native/core': 0.222.2(629a85e1bc84ed50ed605d6790952c15)
+      '@opentelemetry/api': 1.10.0
+      '@opentelemetry/context-async-hooks': 2.12.0(@opentelemetry/api@1.10.0)
+      '@opentelemetry/exporter-metrics-otlp-proto': 0.222.0(@opentelemetry/api@1.10.0)
+      '@opentelemetry/exporter-trace-otlp-proto': 0.222.0(@opentelemetry/api@1.10.0)
+      '@opentelemetry/resources': 2.12.0(@opentelemetry/api@1.10.0)
+      '@opentelemetry/sdk-metrics': 2.12.0(@opentelemetry/api@1.10.0)
+      '@opentelemetry/sdk-trace-base': 2.12.0(@opentelemetry/api@1.10.0)
+
   '@agent-native/recap-cli@0.5.93(playwright@1.64.1)':
     optionalDependencies:
       playwright: 1.64.1
@@ -7730,6 +8050,23 @@ snapshots:
       lru_map: 0.4.1
       near-abi: 0.2.0
 
+  '@near-js/accounts@2.5.1(3c1190d6e9e593fe008c6032e5491008)':
+    dependencies:
+      '@near-js/crypto': 2.5.1(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1))
+      '@near-js/keystores': 2.2.5(@near-js/crypto@2.5.1(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1)))(@near-js/types@2.5.1)
+      '@near-js/providers': 2.5.1(@near-js/crypto@2.5.1(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1)))(@near-js/transactions@2.5.1(@near-js/crypto@2.5.1(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1)))(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1)))(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1))
+      '@near-js/signers': 2.5.1(@near-js/crypto@2.5.1(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1)))(@near-js/keystores@2.2.5(@near-js/crypto@2.5.1(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1)))(@near-js/types@2.5.1))(@near-js/transactions@2.5.1(@near-js/crypto@2.5.1(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1)))(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1)))
+      '@near-js/tokens': 2.5.1
+      '@near-js/transactions': 2.5.1(@near-js/crypto@2.5.1(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1)))(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1))
+      '@near-js/types': 2.5.1
+      '@near-js/utils': 2.5.1(@near-js/types@2.5.1)
+      '@noble/hashes': 1.7.1
+      borsh: 1.0.0
+      depd: 2.0.0
+      is-my-json-valid: 2.20.6
+      lru_map: 0.4.1
+      near-abi: 0.2.0
+
   '@near-js/accounts@2.5.1(772bd15529ec8c15bbf7a1ec1e21b414)':
     dependencies:
       '@near-js/crypto': 2.5.1(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1))
@@ -7896,6 +8233,22 @@ snapshots:
   '@near-wallet-selector/my-near-wallet@10.1.4(@near-js/keystores@2.2.5(@near-js/crypto@2.5.1(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1)))(@near-js/types@2.5.1))(@near-js/signers@2.5.1(@near-js/crypto@2.5.1(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1)))(@near-js/keystores@2.2.5(@near-js/crypto@2.5.1(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1)))(@near-js/types@2.5.1))(@near-js/transactions@2.2.5(@near-js/crypto@2.2.5(@near-js/types@2.2.5)(@near-js/utils@2.5.1(@near-js/types@2.5.1)))(@near-js/types@2.2.5)(@near-js/utils@2.5.1(@near-js/types@2.5.1))))(@near-js/tokens@2.5.1)(@near-js/types@2.5.1)':
     dependencies:
       '@near-js/accounts': 2.5.1(772bd15529ec8c15bbf7a1ec1e21b414)
+      '@near-js/crypto': 2.5.1(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1))
+      '@near-js/providers': 2.5.1(@near-js/crypto@2.5.1(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1)))(@near-js/transactions@2.5.1(@near-js/crypto@2.5.1(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1)))(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1)))(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1))
+      '@near-js/transactions': 2.5.1(@near-js/crypto@2.5.1(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1)))(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1))
+      '@near-js/utils': 2.5.1(@near-js/types@2.5.1)
+      '@near-wallet-selector/core': 10.1.4(@near-js/keystores@2.2.5(@near-js/crypto@2.5.1(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1)))(@near-js/types@2.5.1))(@near-js/utils@2.5.1(@near-js/types@2.5.1))
+      borsh: 2.0.0
+    transitivePeerDependencies:
+      - '@near-js/keystores'
+      - '@near-js/signers'
+      - '@near-js/tokens'
+      - '@near-js/types'
+      - encoding
+
+  '@near-wallet-selector/my-near-wallet@10.1.4(@near-js/keystores@2.2.5(@near-js/crypto@2.5.1(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1)))(@near-js/types@2.5.1))(@near-js/signers@2.5.1(@near-js/crypto@2.5.1(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1)))(@near-js/keystores@2.2.5(@near-js/crypto@2.5.1(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1)))(@near-js/types@2.5.1))(@near-js/transactions@2.5.1(@near-js/crypto@2.5.1(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1)))(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1))))(@near-js/tokens@2.5.1)(@near-js/types@2.5.1)':
+    dependencies:
+      '@near-js/accounts': 2.5.1(3c1190d6e9e593fe008c6032e5491008)
       '@near-js/crypto': 2.5.1(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1))
       '@near-js/providers': 2.5.1(@near-js/crypto@2.5.1(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1)))(@near-js/transactions@2.5.1(@near-js/crypto@2.5.1(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1)))(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1)))(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1))
       '@near-js/transactions': 2.5.1(@near-js/crypto@2.5.1(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1)))(@near-js/types@2.5.1)(@near-js/utils@2.5.1(@near-js/types@2.5.1))
@@ -11551,7 +11904,7 @@ snapshots:
       '@noble/hashes': 1.8.0
       '@scure/bip32': 1.7.0
       '@scure/bip39': 1.6.0
-      abitype: 1.2.3(typescript@7.0.2)(zod@4.6.7)
+      abitype: 1.3.0(typescript@7.0.2)(zod@4.6.7)
       eventemitter3: 5.0.1
     optionalDependencies:
       typescript: 7.0.2

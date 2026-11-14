@@ -76,7 +76,7 @@ blind AI judge ─▶ verdict ─▶ moderator clicks "Approve and settle on NEA
   the debater's own wallet and settling needs a moderator's approval.
 - UI: the **Stakes on NEAR** panel on every debate room and verdict page
   ([`app/components/argue/near/stake-panel.tsx`](app/components/argue/near/stake-panel.tsx)), with
-  MyNearWallet / Meteor Wallet through NEAR Wallet Selector.
+  MyNearWallet through NEAR Wallet Selector.
 
 | Verdict | What the contract is told |
 | --- | --- |
@@ -371,7 +371,7 @@ The hackathon window is 1–14 Nov 2026. Here is what existed before it and what
 
 The git history shows each step (`git log --reverse`). Built with AI assistance (Claude Code).
 
-**Libraries:** near-sdk (Rust), near-api-js, NEAR Wallet Selector (MyNearWallet, Meteor), Agent-Native, React
+**Libraries:** near-sdk (Rust), near-api-js, NEAR Wallet Selector (MyNearWallet), Agent-Native, React
 Router, Drizzle, PGlite, zod, Vitest, Playwright.
 
 **Tests for the NEAR part:**

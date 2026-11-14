@@ -46,6 +46,11 @@ export default defineConfig({
       "@polymarket/client",
       "@polymarket/client/viem",
       "@polymarket/client/actions",
+      // Argue Rock stakes: the NEAR wallet is imported lazily by app/lib/near-wallet.ts, so it must be listed
+      // here too (same noDiscovery reason as the Polymarket SDK above).
+      "near-api-js",
+      "@near-wallet-selector/core",
+      "@near-wallet-selector/my-near-wallet",
     ],
     entries: [
       "app/entry.client.tsx",
