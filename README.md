@@ -107,6 +107,10 @@ pnpm seed                      # demo people, arguments, debates and agent momen
 pnpm dev                       # opens the app in your browser
 ```
 
+**Windows, folder path with a space** (for example `Desktop\new work`): the framework's CLI fails with
+`'C:\...\new' is not recognized`. Run `scripts\dev-windows.cmd` instead of `npm run dev`. It maps the parent
+folder to drive `R:` and starts the dev server from there.
+
 **The judge provider is required.** Set `JUDGE_PROVIDER` in `.env`. There is no default, and the app never falls
 back to the mock on its own:
 
