@@ -1,0 +1,24 @@
+[package]
+name = "argue-rock-stake-escrow"
+version = "0.1.0"
+edition = "2021"
+description = "Argue Rock: NEAR escrow that holds both debaters' stakes and pays the winner of a judged debate"
+license = "MIT"
+publish = false
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+near-sdk = "5"
+
+[dev-dependencies]
+near-sdk = { version = "5", features = ["unit-testing"] }
+
+[profile.release]
+codegen-units = 1
+opt-level = "z"
+lto = true
+debug = false
+panic = "abort"
+overflow-checks = true

@@ -45,3 +45,7 @@ data/*.lock
 # Playwright output
 test-results/
 playwright-report/
+
+# NEAR contract build output
+contracts/*/target/
+
