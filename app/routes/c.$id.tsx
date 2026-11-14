@@ -14,6 +14,7 @@ import { RoomTimeline } from "@/components/argue/competitions/room/room-timeline
 import { SubmissionEditor } from "@/components/argue/competitions/room/submission-editor";
 import { SubmissionsBoard } from "@/components/argue/competitions/room/submissions-board";
 import { TermsPanel } from "@/components/argue/competitions/terms-panel";
+import { StakePanel } from "@/components/argue/near/stake-panel";
 import { PageContainer } from "@/components/argue/shell/page";
 import { Card } from "@/components/argue/ui/card";
 import type { CompetitionRoomView } from "@domain/competitions/queries";
@@ -31,7 +32,7 @@ export async function clientLoader({ params, request }: ClientLoaderFunctionArgs
 clientLoader.hydrate = true as const;
 
 export const meta: MetaFunction<typeof clientLoader> = ({ loaderData: data }) => [
-  { title: data?.room ? `Challenge: ${data.room.argument.title} · ARGUE IT` : "Challenge · ARGUE IT" },
+  { title: data?.room ? `Challenge: ${data.room.argument.title} · ARGUE ROCK` : "Challenge · ARGUE ROCK" },
 ];
 
 export const HydrateFallback = RouteLoading;
@@ -79,6 +80,7 @@ export default function CompetitionRoomPage() {
         ) : null}
         {isActive ? <ActiveArea room={room} writeBlocked={writeBlocked} /> : null}
         <OutcomePanel room={room} />
+        {!isPending ? <StakePanel competitionId={room.id} /> : null}
 
         <SubmissionsBoard room={room} />
 

@@ -7,6 +7,7 @@
 import { ArrowLeft, UserCheck } from "lucide-react";
 import { useLoaderData, type ClientLoaderFunctionArgs, type MetaFunction } from "react-router";
 
+import { StakePanel } from "@/components/argue/near/stake-panel";
 import { PageContainer } from "@/components/argue/shell/page";
 import { ButtonLink } from "@/components/argue/ui/button";
 import { Card } from "@/components/argue/ui/card";
@@ -54,7 +55,7 @@ export const meta: MetaFunction<typeof clientLoader> = ({ loaderData: loaded }) 
   const d = loaded?.data;
   return [
     {
-      title: d ? `${d.sides.A.displayName} vs ${d.sides.B.displayName}: the AI verdict · ARGUE IT` : "Verdict · ARGUE IT",
+      title: d ? `${d.sides.A.displayName} vs ${d.sides.B.displayName}: the AI verdict · ARGUE ROCK` : "Verdict · ARGUE ROCK",
     },
   ];
 };
@@ -171,6 +172,8 @@ export default function VerdictPage() {
               <FlaggedClaims explanation={explanation} sides={data.sides} />
             </>
           ) : null}
+
+          <StakePanel competitionId={data.competitionId} />
 
           <HowJudged verdict={current} rubric={rubric} rubricRef={data.rubric} judgedBy={judgedBy} />
           {/*

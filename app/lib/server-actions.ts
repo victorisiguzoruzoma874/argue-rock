@@ -1,5 +1,5 @@
 /**
- * Client stubs for the reference ARGUE IT server actions (Task 6).
+ * Client stubs for the reference ARGUE ROCK server actions (Task 6).
  *
  * Every export keeps the reference name and signature (`(input) => Promise<ActionResult<T>>`), so
  * copied components keep working unchanged. Each one calls the matching Agent-Native action
@@ -72,7 +72,7 @@ const STATUS_CODES: Record<number, ActionErrorCode> = {
 };
 
 const GENERIC_ERROR = "Something went wrong. Please try again.";
-export const NOT_PORTED_MESSAGE = "This isn't available in this version of ARGUE IT yet.";
+export const NOT_PORTED_MESSAGE = "This isn't available in this version of ARGUE ROCK yet.";
 
 function failure(error: string, code?: ActionErrorCode, fieldErrors?: FieldErrors): ActionFailure {
   return {
@@ -279,4 +279,20 @@ export async function signOut(): Promise<ActionResult<void>> {
   } catch (error) {
     return toActionFailure(error);
   }
+}
+
+// ---------------------------------------------------------------------------------------------------
+// NEAR stakes (Argue Rock)
+// ---------------------------------------------------------------------------------------------------
+
+export function getStakes<T = unknown>(input: { competitionId: string }) {
+  return invoke<T>("get-stakes", input, "GET");
+}
+
+export function recordStake<T = unknown>(input: { competitionId: string; txHash: string; nearAccountId: string }) {
+  return invoke<T>("record-stake", input);
+}
+
+export function settleStakes<T = unknown>(input: { competitionId: string }) {
+  return invoke<T>("settle-stakes", input);
 }

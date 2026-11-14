@@ -678,6 +678,57 @@ export const appeals = pgTable(
 );
 
 // ---------------------------------------------------------------------------
+// NEAR stakes (Argue Rock). The escrow contract holds the money; these rows link an on-chain stake to the
+// debater who made it, so a stranger who stakes a side on-chain can never be paid as that debater.
+// ---------------------------------------------------------------------------
+
+export const nearStakes = pgTable(
+  "near_stakes",
+  {
+    id: id(),
+    competitionId: uuid("competition_id")
+      .notNull()
+      .references(() => competitions.id, { onDelete: "cascade" }),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id),
+    /** "A" or "B": the verdict's side labels. */
+    side: text("side").notNull(),
+    nearAccountId: text("near_account_id").notNull(),
+    amountYocto: text("amount_yocto").notNull(),
+    txHash: text("tx_hash").notNull(),
+    createdAt: createdAt(),
+  },
+  (t) => [
+    unique("near_stakes_competition_side_uq").on(t.competitionId, t.side),
+    unique("near_stakes_tx_uq").on(t.txHash),
+    check("near_stakes_side", sql`${t.side} in ('A', 'B')`),
+  ],
+);
+
+export const nearSettlements = pgTable(
+  "near_settlements",
+  {
+    id: id(),
+    competitionId: uuid("competition_id")
+      .notNull()
+      .references(() => competitions.id, { onDelete: "cascade" }),
+    verdictId: uuid("verdict_id")
+      .notNull()
+      .references(() => verdicts.id),
+    /** What the contract was told: "A", "B" or "Draw". */
+    outcome: text("outcome").notNull(),
+    verdictHash: text("verdict_hash").notNull(),
+    txHash: text("tx_hash").notNull(),
+    approvedBy: uuid("approved_by")
+      .notNull()
+      .references(() => users.id),
+    createdAt: createdAt(),
+  },
+  (t) => [unique("near_settlements_competition_uq").on(t.competitionId)],
+);
+
+// ---------------------------------------------------------------------------
 // Reputation
 // ---------------------------------------------------------------------------
 

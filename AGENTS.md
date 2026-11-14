@@ -29,6 +29,11 @@ Every ARGUE IT action wraps the reference domain function unchanged (`server/dom
 | `create-profile` | new: insert `users` + `profiles` for the signed-in email | POST | framework session, no profile yet | Onboarding (`/welcome`): pick a handle. |
 | `list-markets` | new: `polymarket/markets.listMarketEvents` (Polymarket Gamma API, cached) | GET | signed in | Live Polymarket events (most traded, or `query` search) with leading odds. |
 | `get-market` | new: `polymarket/markets.getMarketEvent` + price history + `polymarket/debates.listMarketDebates` | GET | signed in | One event by `slug`: options, Yes/No prices, odds history, linked arguments, whether betting is on. |
+| `get-stakes` | new: `near/service.getStakes` (NEAR RPC view + `near_stakes`) | GET | signed in | A debate's NEAR stakes: escrow, each side's linked and on-chain account, pool status, settlement, and why it can or can't be settled yet. |
+| `record-stake` | new: `near/service.recordStake` | POST | the debater on that side | Link a `stake` transaction the debater's own wallet signed; the server verifies it on-chain first. The agent never calls this. |
+| `settle-stakes` | new: `near/service.settleStakes` (judge key → escrow `settle`) | POST | moderator, not a debater; needs approval | Settle from the final verdict: A/B pays the pot to that side's staker, draw or mismatch refunds both, inconclusive never settles. Writes the verdict sha256 on-chain. |
+
+Staking on NEAR (Argue Rock) has no agent path on purpose: the debater's own wallet signs `stake`, and settling needs a moderator's click. The agent may read `get-stakes` and explain it; it never stakes, links, settles or recommends an amount.
 
 Betting on Polymarket has no action on purpose: the user's own browser wallet signs each order in the trade panel (`app/lib/polymarket-trading.ts`), and the server only signs Builder headers at `POST /api/polymarket/builder-sign` (signed in, rate-limited; off unless `POLYMARKET_BUILDER_CODE`, `_API_KEY`, `_SECRET`, `_PASSPHRASE` are set). The agent reads markets and never places, sizes or recommends bets.
 
