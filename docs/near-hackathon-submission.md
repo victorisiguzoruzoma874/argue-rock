@@ -6,7 +6,7 @@
 
 ## Checklist (human)
 
-- [ ] Repository pushed and **public** (judges can't open private repos). URL: `TBD`
+- [x] Repository pushed and **public**: <https://github.com/victorisiguzoruzoma874/argue-rock>
 - [ ] Demo video recorded (≤ 2 min; see the script below)
 - [ ] X post published, saying it was built at NEAR HACKATHON, tagging @NEARProtocol and #NEARHackathon, with the
       video attached. URL: `TBD`
@@ -23,7 +23,7 @@
 | Team size | Solo |
 | Tracks | Social Money; AI Security & Defense |
 | NEAR payout account (mainnet) | `TBD` |
-| Repository URL | `TBD` |
+| Repository URL | https://github.com/victorisiguzoruzoma874/argue-rock |
 | Demo post URL | `TBD` |
 
 **Description (about 1,000 characters, limit 2,000):**
@@ -72,7 +72,7 @@ visible result.
 > ✅ A moderator approves, and the contract pays the winner. It can't pay anyone else, and the verdict's hash goes
 > on-chain
 >
-> Demo 👇 Repo: <repo link>
+> Demo 👇 Repo: github.com/victorisiguzoruzoma874/argue-rock
 > Escrow on testnet: escrow.argue-rock-mwgb8n0f.testnet
 >
 > What would you put 1 NEAR on? Feedback on the payout rules is welcome.
