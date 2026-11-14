@@ -33,7 +33,7 @@ import {
 import { RouteErrorState, RouteLoading } from "./_lib/route-states";
 
 export const meta: MetaFunction = () => [
-  { title: "ARGUE IT — Don't just argue. Prove your point." },
+  { title: "ARGUE ROCK — Don't just argue. Prove your point." },
   {
     name: "description",
     content:
@@ -74,7 +74,7 @@ export async function clientLoader({ request }: ClientLoaderFunctionArgs) {
     const loadError = readLoadError(error);
     if (loadError.code === NEEDS_HANDLE_CODE) throw redirect(welcomeHref(returnPathOf(request)));
     if (loadError.code === "UNAUTHENTICATED") {
-      // Signed in to the framework but no ARGUE IT profile → /welcome; truly signed out → landing.
+      // Signed in to the framework but no ARGUE ROCK profile → /welcome; truly signed out → landing.
       if (await getFrameworkEmail()) throw redirect(welcomeHref(returnPathOf(request)));
       return { kind: "landing" as const };
     }

@@ -39,7 +39,7 @@ import { chatThreadPath, threadIdFromPath } from "@/lib/chat-paths";
 import { cn } from "@/lib/utils";
 
 const CHAT_STORAGE_KEY = "chat";
-const ARGUE_TITLE = "ARGUE IT";
+const ARGUE_TITLE = "ARGUE ROCK";
 const CHAT_ACTIVE_THREAD_KEY = `agent-chat-active-thread:${CHAT_STORAGE_KEY}`;
 
 interface SidebarProps {
@@ -122,7 +122,7 @@ function persistActiveThreadId(threadId: string) {
   } catch {}
 }
 
-/** ARGUE IT screens (Task 6). Chat threads stay below; the agent sidebar stays on the right. */
+/** ARGUE ROCK screens (Task 6). Chat threads stay below; the agent sidebar stays on the right. */
 const ARGUE_NAV: ReadonlyArray<{
   to: string;
   label: string;

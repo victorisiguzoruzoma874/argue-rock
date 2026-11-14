@@ -1,8 +1,8 @@
 /**
- * ARGUE IT route <-> semantic screen state for the agent (plan Task 7).
+ * ARGUE ROCK route <-> semantic screen state for the agent (plan Task 7).
  *
  * Pure (no React, no DB) so the UI hook, the `navigate` action and tests all share one table.
- * `toNavigationState` returns null for routes that are not ARGUE IT screens (the template's chat,
+ * `toNavigationState` returns null for routes that are not ARGUE ROCK screens (the template's chat,
  * settings, database… pages); the caller then falls back to the template's own view mapping.
  */
 
@@ -62,7 +62,7 @@ function reviewTab(value: string | null): ReviewTab {
   return value === "appeals" ? "appeals" : "review";
 }
 
-/** Map a router-local pathname (plus optional query string) to the ARGUE IT screen it shows. */
+/** Map a router-local pathname (plus optional query string) to the ARGUE ROCK screen it shows. */
 export function toNavigationState(pathname: string, search?: SearchInput): ArgueNav | null {
   const params = toSearchParams(search);
   const path = pathname.length > 1 ? pathname.replace(/\/+$/, "") : pathname;
@@ -105,7 +105,7 @@ export function toNavigationState(pathname: string, search?: SearchInput): Argue
   }
 }
 
-/** The router-local path for an ARGUE IT screen (inverse of `toNavigationState`). */
+/** The router-local path for an ARGUE ROCK screen (inverse of `toNavigationState`). */
 export function pathForNav(nav: ArgueNav): string {
   const seg = encodeURIComponent;
   switch (nav.view) {
@@ -148,7 +148,7 @@ export interface ArgueNavCommandFields {
 
 /**
  * Build an ArgueNav from a loose command (agent `navigate` input). Returns null when the view is not an
- * ARGUE IT view; throws when a required id is missing so the agent gets a clear error instead of a
+ * ARGUE ROCK view; throws when a required id is missing so the agent gets a clear error instead of a
  * silent redirect to the wrong record.
  */
 export function navFromCommand(command: ArgueNavCommandFields): ArgueNav | null {

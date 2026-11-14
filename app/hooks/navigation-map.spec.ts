@@ -35,7 +35,7 @@ describe("toNavigationState", () => {
     });
   });
 
-  it("returns null for template routes that are not ARGUE IT screens", () => {
+  it("returns null for template routes that are not ARGUE ROCK screens", () => {
     for (const pathname of ["/chat", "/chat/t-1", "/settings", "/database", "/a", "/c/abc/other", "/admin"]) {
       expect(toNavigationState(pathname), pathname).toBeNull();
     }

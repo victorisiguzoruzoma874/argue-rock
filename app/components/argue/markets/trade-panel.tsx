@@ -323,7 +323,7 @@ export function TradePanel({ eventTitle, eventUrl, outcome, side, onSideChange, 
         <a href="https://polymarket.com/tos" target="_blank" rel="noopener noreferrer" className="underline">
           Terms of Use
         </a>
-        . ARGUE IT never holds your funds.
+        . ARGUE ROCK never holds your funds.
       </p>
     </Card>
   );

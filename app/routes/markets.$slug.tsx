@@ -1,5 +1,5 @@
 // One live Polymarket event: odds chart, every open option with Buy Yes / Buy No, the trade panel, and the
-// ARGUE IT arguments debating it. Data: clientLoader → `get-market` (the agent's read), revalidated every
+// ARGUE ROCK arguments debating it. Data: clientLoader → `get-market` (the agent's read), revalidated every
 // 30 s while the tab is visible so prices stay live. Betting itself happens in the browser (TradePanel).
 //
 // Layout: on lg the trade panel is a sticky right column; below lg it sits right after the options (DOM
@@ -56,7 +56,7 @@ export async function clientLoader({ params, request }: ClientLoaderFunctionArgs
 clientLoader.hydrate = true as const;
 
 export const meta: MetaFunction<typeof clientLoader> = ({ loaderData: data }) =>
-  data ? [{ title: `${data.event.title} · Markets · ARGUE IT` }] : [{ title: "Market · ARGUE IT" }];
+  data ? [{ title: `${data.event.title} · Markets · ARGUE ROCK` }] : [{ title: "Market · ARGUE ROCK" }];
 
 export function HydrateFallback() {
   return <RouteLoading />;

@@ -30,7 +30,7 @@ import { EmptyState } from "@/components/argue/ui/empty-state";
 import { loadAction } from "./_lib/route-data";
 import { RouteErrorState, RouteLoading } from "./_lib/route-states";
 
-export const meta: MetaFunction = () => [{ title: "Set up a challenge · ARGUE IT" }];
+export const meta: MetaFunction = () => [{ title: "Set up a challenge · ARGUE ROCK" }];
 
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 const uuidParam = (value: string | null): string | null => (value && UUID.test(value) ? value : null);

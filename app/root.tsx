@@ -205,7 +205,7 @@ function PublicContent() {
 }
 
 /**
- * ARGUE IT pages that anonymous visitors may open (the reference served `/rules` signed out). Path-based,
+ * ARGUE ROCK pages that anonymous visitors may open (the reference served `/rules` signed out). Path-based,
  * not visitor-based, so the SSR shell stays one cached page per URL. `/` stays private on purpose: the flag
  * also drops RequireSession and the agent for signed-in users on that path, and the feed is the main signed-in
  * surface (so the reference's signed-out landing is not reachable; sign-in comes first).

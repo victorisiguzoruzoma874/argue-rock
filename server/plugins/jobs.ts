@@ -1,5 +1,5 @@
 /**
- * Background tick for ARGUE IT (plan Task 4): runs `runTick()` every 60 s in the server process —
+ * Background tick for ARGUE ROCK (plan Task 4): runs `runTick()` every 60 s in the server process —
  * deadlines, AI judging jobs, suspension expiry and housekeeping. Replaces the reference app's
  * `/api/cron/tick` route + external scheduler.
  *

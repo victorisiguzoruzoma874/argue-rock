@@ -24,7 +24,7 @@ import { RouteErrorState, RouteLoading } from "./_lib/route-states";
 // Each listed event carries all its markets (~150 kB of JSON per event), so keep the page to 20.
 const LIST_LIMIT = 20;
 
-export const meta: MetaFunction = () => [{ title: "Markets · ARGUE IT" }];
+export const meta: MetaFunction = () => [{ title: "Markets · ARGUE ROCK" }];
 
 export async function clientLoader({ request }: ClientLoaderFunctionArgs) {
   const query = new URL(request.url).searchParams.get("q")?.trim().slice(0, 100) ?? "";

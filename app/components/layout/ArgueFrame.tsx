@@ -1,5 +1,5 @@
 /**
- * Wraps ARGUE IT screens (feed, arguments, debates, verdicts, profiles, review queue, rules, welcome) in
+ * Wraps ARGUE ROCK screens (feed, arguments, debates, verdicts, profiles, review queue, rules, welcome) in
  * the `.argue-app` token scope and the reference ToastProvider. Framework screens (chat, settings,
  * database, extensions, ...) render untouched, so the template's shadcn tokens keep styling them.
  */

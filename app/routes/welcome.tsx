@@ -1,10 +1,10 @@
 // Owner: 5b-screens-b (adapted from reference src/app/welcome/page.tsx). Onboarding after framework sign-up.
 //
-// New role in the Agent-Native port: the framework owns sign-in, ARGUE IT owns the `users` row. A signed-in
+// New role in the Agent-Native port: the framework owns sign-in, ARGUE ROCK owns the `users` row. A signed-in
 // email with no `users` row ("needs-handle", Task 2 `ensureAppUser`) is sent here by every screen's loader
 // (app/routes/_lib/route-data.ts) as /welcome?setup=1&next=<path>. This page then lets the person pick a
 // handle through the `create-profile` action and returns them to `next`. Without `setup=1` it shows the
-// "how ARGUE IT works" explainer only.
+// "how ARGUE ROCK works" explainer only.
 //
 // Not ported: the reference "What do you argue about?" interests picker (`saveInterests` has no action yet).
 import { callAction } from "@agent-native/core/client/hooks";
@@ -41,7 +41,7 @@ export async function clientLoader({ request }: ClientLoaderFunctionArgs) {
 }
 clientLoader.hydrate = true as const;
 
-export const meta: MetaFunction = () => [{ title: "Welcome · ARGUE IT" }];
+export const meta: MetaFunction = () => [{ title: "Welcome · ARGUE ROCK" }];
 
 export const HydrateFallback = RouteLoading;
 export const ErrorBoundary = RouteErrorState;
@@ -122,7 +122,7 @@ export default function WelcomePage() {
       <div className="space-y-8 pb-10">
         <header>
           <p className="slant inline-flex h-7 items-center rounded-[3px] bg-ink px-3 font-display font-bold tracking-wide text-ink-inverse">
-            <span className="unslant">WELCOME TO ARGUE IT</span>
+            <span className="unslant">WELCOME TO ARGUE ROCK</span>
           </p>
           <h1 className="mt-3 text-4xl break-words text-ink sm:text-5xl">
             {needsHandle ? "One step left." : "You're in."}
@@ -134,7 +134,7 @@ export default function WelcomePage() {
 
         <section aria-labelledby="how-heading" className="space-y-3">
           <h2 id="how-heading" className="sr-only">
-            How ARGUE IT works
+            How ARGUE ROCK works
           </h2>
           <Card>
             <div className="mb-2 flex items-center gap-2">

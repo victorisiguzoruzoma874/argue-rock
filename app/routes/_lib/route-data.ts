@@ -1,5 +1,5 @@
 /**
- * Route data loading for the ARGUE IT screens (Task 6, "Loader rule").
+ * Route data loading for the ARGUE ROCK screens (Task 6, "Loader rule").
  *
  * Why a clientLoader and not a server `loader`: the framework renders SSR HTML and `.data` responses as
  * one impersonal public shell with cookies stripped (core docs, ssr-caching.mdx). A server loader never
@@ -10,7 +10,7 @@
  * The rule itself, translated to the client:
  * - the action's `requireUser()` fails with UNAUTHENTICATED → framework sign-in (full document load,
  *   because `/sign-in` is served by the framework, not by a React Router route);
- * - signed in to the framework but no ARGUE IT `users` row ("needs-handle") → `/welcome`;
+ * - signed in to the framework but no ARGUE ROCK `users` row ("needs-handle") → `/welcome`;
  * - NOT_FOUND → a 404 route error response (rendered by the route's ErrorBoundary);
  * - FORBIDDEN → a 403 route error response, or a typed "forbidden" result for staff screens that want to
  *   render their own state. Either way no case material is returned.
@@ -22,7 +22,7 @@ import { appPath } from "@agent-native/core/client/api-path";
 import { buildSignInReturnHref } from "@agent-native/core/client/sign-in-return";
 import { data, redirect, redirectDocument } from "react-router";
 
-/** Error code the actions use (or may use) when the email has no ARGUE IT `users` row yet. */
+/** Error code the actions use (or may use) when the email has no ARGUE ROCK `users` row yet. */
 export const NEEDS_HANDLE_CODE = "NEEDS_HANDLE";
 export const SESSION_PATH = "/_agent-native/auth/session";
 const GENERIC_ERROR = "Something went wrong. Please try again.";
@@ -116,7 +116,7 @@ export async function responseForLoadError(
     case NEEDS_HANDLE_CODE:
       return redirect(welcomeHref(here));
     case "UNAUTHENTICATED": {
-      // Signed in to the framework but unknown to ARGUE IT means "pick a handle", not "sign in again".
+      // Signed in to the framework but unknown to ARGUE ROCK means "pick a handle", not "sign in again".
       const email = await getFrameworkEmail();
       return email ? redirect(welcomeHref(here)) : redirectDocument(signInHref(here));
     }

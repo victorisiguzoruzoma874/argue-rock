@@ -2,7 +2,7 @@
 // PRD §8.2). Data: clientLoader → `list-categories`; submit → `create-argument` via app/lib/server-actions.
 //
 // The reference's `requirePageUser("/new")` becomes `get-session`: signed out (`null`) → framework sign-in;
-// NEEDS_HANDLE (framework session, no ARGUE IT profile) → `/welcome`. The reference "account suspended"
+// NEEDS_HANDLE (framework session, no ARGUE ROCK profile) → `/welcome`. The reference "account suspended"
 // notice comes from the same call; `create-argument` still refuses a suspended user server-side.
 import { redirectDocument, useLoaderData, type ClientLoaderFunctionArgs, type MetaFunction } from "react-router";
 
@@ -18,7 +18,7 @@ import { parseMarketSlug } from "@domain/polymarket/slug";
 import { loadAction, readLoadError, responseForLoadError, returnPathOf, signInHref } from "./_lib/route-data";
 import { RouteErrorState, RouteLoading } from "./_lib/route-states";
 
-export const meta: MetaFunction = () => [{ title: "Post an argument · ARGUE IT" }];
+export const meta: MetaFunction = () => [{ title: "Post an argument · ARGUE ROCK" }];
 
 export async function clientLoader({ request }: ClientLoaderFunctionArgs) {
   let viewer: Awaited<ReturnType<typeof fetchViewer>>;

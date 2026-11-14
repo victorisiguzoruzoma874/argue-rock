@@ -13,9 +13,9 @@ export function LogoMark({ className }: { className?: string }) {
 
 export function Logo({ className }: { className?: string }) {
   return (
-    <Link href="/" className={cn("inline-flex items-center gap-2 rounded-md", className)} aria-label="ARGUE IT home">
+    <Link href="/" className={cn("inline-flex items-center gap-2 rounded-md", className)} aria-label="ARGUE ROCK home">
       <LogoMark />
-      <span className="font-display text-2xl leading-none font-extrabold tracking-tight text-ink italic">ARGUE IT</span>
+      <span className="font-display text-2xl leading-none font-extrabold tracking-tight text-ink italic">ARGUE ROCK</span>
     </Link>
   );
 }

@@ -1,5 +1,5 @@
 /**
- * Boots the real ARGUE IT db plugin against an isolated in-memory framework database (never data/pglite):
+ * Boots the real ARGUE ROCK db plugin against an isolated in-memory framework database (never data/pglite):
  * framework migration runner + drizzle/*.sql + createGetDb + category/rubric seeding, end to end.
  */
 import { afterAll, beforeAll, describe, expect, it, vi } from "vitest";

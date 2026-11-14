@@ -54,14 +54,14 @@ export async function clientLoader({ params, request }: ClientLoaderFunctionArgs
 clientLoader.hydrate = true as const;
 
 export const meta: MetaFunction<typeof clientLoader> = ({ loaderData: data }) => {
-  if (!data) return [{ title: "Argument · ARGUE IT" }];
+  if (!data) return [{ title: "Argument · ARGUE ROCK" }];
   if (!isFullArgument(data.page) || data.page.argument.status !== "visible") {
-    return [{ title: "Argument unavailable · ARGUE IT" }, { name: "robots", content: "noindex" }];
+    return [{ title: "Argument unavailable · ARGUE ROCK" }, { name: "robots", content: "noindex" }];
   }
   const argument = data.page.argument;
   return [
-    { title: `${argument.title} · ARGUE IT` },
-    { name: "description", content: `${argument.proposition} — AGREE or AGAINST? Pick a side on ARGUE IT.` },
+    { title: `${argument.title} · ARGUE ROCK` },
+    { name: "description", content: `${argument.proposition} — AGREE or AGAINST? Pick a side on ARGUE ROCK.` },
   ];
 };
 

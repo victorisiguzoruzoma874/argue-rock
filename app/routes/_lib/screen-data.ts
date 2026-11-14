@@ -69,7 +69,7 @@ export function queueTab(search: string | URLSearchParams): QueueTab {
 export interface ReviewQueueData {
   review: ReviewQueueItem[];
   appeals: AppealQueue;
-  /** The signed-in reviewer's ARGUE IT user id, to hide decision forms on their own debates. */
+  /** The signed-in reviewer's ARGUE ROCK user id, to hide decision forms on their own debates. */
   viewerId: string | null;
 }
 

@@ -154,7 +154,7 @@ function navFromState(navigation: unknown): ArgueNav | null {
 
 export default defineAction({
   description:
-    "Read the user's current ARGUE IT screen: { navigation, visible }. `visible` summarises the record on screen " +
+    "Read the user's current ARGUE ROCK screen: { navigation, visible }. `visible` summarises the record on screen " +
     "(verdict: proposition, outcome, winner side, per-criterion scores, appeal deadline; review queue: counts and the " +
     "first 5 item ids). Basic navigation is already in <current-screen>; call this for a fresh read.",
   schema: z.object({}),

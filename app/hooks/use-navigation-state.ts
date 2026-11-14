@@ -77,7 +77,7 @@ export function navigationStateForPath(
   pathname: string,
   searchParams?: URLSearchParams,
 ): NavigationState {
-  // ARGUE IT screens first; the template's chat/settings/database views below stay as they were.
+  // ARGUE ROCK screens first; the template's chat/settings/database views below stay as they were.
   const argue = toNavigationState(pathname, searchParams);
   if (argue) {
     return {
@@ -133,7 +133,7 @@ function pathForView(view?: string): string {
   }
 }
 
-/** Local path for an ARGUE IT view command, or null for template views / missing ids. */
+/** Local path for an ARGUE ROCK view command, or null for template views / missing ids. */
 function argueCommandPath(command: any): string | null {
   try {
     const nav = navFromCommand(command ?? {});

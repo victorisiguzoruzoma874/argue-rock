@@ -49,7 +49,7 @@ export async function clientLoader() {
 clientLoader.hydrate = true as const;
 
 export const meta: MetaFunction = () => [
-  { title: "Rules · ARGUE IT" },
+  { title: "Rules · ARGUE ROCK" },
   {
     name: "description",
     content:

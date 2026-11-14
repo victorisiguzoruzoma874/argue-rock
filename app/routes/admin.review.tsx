@@ -66,7 +66,7 @@ export function shouldRevalidate({
   return defaultShouldRevalidate;
 }
 
-export const meta: MetaFunction = () => [{ title: "Review queue · Admin · ARGUE IT" }];
+export const meta: MetaFunction = () => [{ title: "Review queue · Admin · ARGUE ROCK" }];
 
 export const HydrateFallback = RouteLoading;
 export const ErrorBoundary = RouteErrorState;

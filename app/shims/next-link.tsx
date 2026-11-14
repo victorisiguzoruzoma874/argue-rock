@@ -1,5 +1,5 @@
 /**
- * Client shim for `next/link`, so copied ARGUE IT components keep their bodies unchanged.
+ * Client shim for `next/link`, so copied ARGUE ROCK components keep their bodies unchanged.
  * `href` (string or a Next-style URL object) maps to React Router's `to`. Next-only props
  * (`prefetch`, `scroll`, `shallow`, `legacyBehavior`, `passHref`, `locale`) are dropped.
  */

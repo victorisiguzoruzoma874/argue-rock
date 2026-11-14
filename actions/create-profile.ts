@@ -18,11 +18,11 @@ const HANDLE_TAKEN = "That handle is taken. Try another.";
 
 /**
  * New in the port (no reference equivalent): the framework owns sign-up, so the first visit of a signed-in
- * email has no ARGUE IT `users` row. /welcome calls this to create `users` + `profiles` with a chosen handle.
+ * email has no ARGUE ROCK `users` row. /welcome calls this to create `users` + `profiles` with a chosen handle.
  */
 export default defineAction({
   description:
-    "Finish onboarding: create the signed-in person's ARGUE IT profile with a chosen handle (3–20 lowercase letters, numbers or underscores) and optional display name. Fails with CONFLICT when the handle is taken or a profile already exists.",
+    "Finish onboarding: create the signed-in person's ARGUE ROCK profile with a chosen handle (3–20 lowercase letters, numbers or underscores) and optional display name. Fails with CONFLICT when the handle is taken or a profile already exists.",
   schema: createProfileInput,
   outputSchema: z.object({ userId: z.string(), handle: z.string(), displayName: z.string() }),
   errors: domainErrors,
@@ -34,7 +34,7 @@ export default defineAction({
         const email = (ctx?.userEmail ?? getRequestUserEmail())?.trim().toLowerCase();
         if (!email) throw new ActionError("UNAUTHENTICATED", "Sign in to do that.");
         if ((await ensureAppUser(email)) !== "needs-handle") {
-          throw new ActionError("CONFLICT", "You already have an ARGUE IT profile.");
+          throw new ActionError("CONFLICT", "You already have an ARGUE ROCK profile.");
         }
         const name = displayName ?? handle;
 

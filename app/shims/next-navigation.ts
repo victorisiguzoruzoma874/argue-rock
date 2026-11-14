@@ -1,5 +1,5 @@
 /**
- * Client shim for `next/navigation`, so copied ARGUE IT components keep their bodies unchanged.
+ * Client shim for `next/navigation`, so copied ARGUE ROCK components keep their bodies unchanged.
  * - `useRouter().refresh()` re-runs the route loaders (React Router revalidation), which is what
  *   Next's refresh did for server components.
  * - `redirect` / `notFound` throw React Router responses (valid inside loaders and render).

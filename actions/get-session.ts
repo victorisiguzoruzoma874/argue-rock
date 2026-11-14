@@ -8,10 +8,10 @@ import { domainErrors, throwDomainFailure } from "../server/lib/domain-action.js
 /**
  * Who-am-I for the screens (requested by 5-screens-a/5b; not in the plan's table). Server loaders are
  * anonymous on this framework, so the client asks here. Signed out → `null`; signed in to the framework
- * without an ARGUE IT profile → NEEDS_HANDLE (via the shared error mapping).
+ * without an ARGUE ROCK profile → NEEDS_HANDLE (via the shared error mapping).
  */
 export default defineAction({
-  description: "Return the signed-in ARGUE IT user (id, role, handle, status), or null when signed out.",
+  description: "Return the signed-in ARGUE ROCK user (id, role, handle, status), or null when signed out.",
   schema: z.object({}),
   outputSchema: z
     .object({

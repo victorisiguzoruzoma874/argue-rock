@@ -2,10 +2,10 @@
  * In-browser Polymarket trading for the market trade panel.
  *
  * Non-custodial by construction: the user's own injected wallet (MetaMask, Rabby, ...) signs the CLOB
- * login and every order, and orders go from this browser straight to Polymarket. ARGUE IT never sees a
+ * login and every order, and orders go from this browser straight to Polymarket. ARGUE ROCK never sees a
  * private key or holds funds. Our server only signs Builder headers for relayer calls (Deposit Wallet
  * deployment, gasless approvals) through `/api/polymarket/builder-sign`, and our public builder code is
- * attached to each order so the volume is credited to ARGUE IT's builder profile.
+ * attached to each order so the volume is credited to ARGUE ROCK's builder profile.
  *
  * Orders are sent from the browser on purpose: Polymarket geoblocks by the requesting IP, so the check and
  * the order must both come from the user's own connection, never from our server.

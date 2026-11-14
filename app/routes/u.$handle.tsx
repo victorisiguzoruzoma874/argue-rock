@@ -62,10 +62,10 @@ export function shouldRevalidate({ currentUrl, nextUrl, defaultShouldRevalidate 
 
 export const meta: MetaFunction<typeof clientLoader> = ({ loaderData: data }) => {
   const profile = data?.page.profile;
-  if (!profile || profile.status === "deleted") return [{ title: "Profile · ARGUE IT" }];
+  if (!profile || profile.status === "deleted") return [{ title: "Profile · ARGUE ROCK" }];
   return [
-    { title: `${profile.displayName} (@${profile.handle}) · ARGUE IT` },
-    { name: "description", content: profile.bio ?? `${profile.displayName}'s debate record on ARGUE IT.` },
+    { title: `${profile.displayName} (@${profile.handle}) · ARGUE ROCK` },
+    { name: "description", content: profile.bio ?? `${profile.displayName}'s debate record on ARGUE ROCK.` },
   ];
 };
 

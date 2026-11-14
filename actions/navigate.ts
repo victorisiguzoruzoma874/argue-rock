@@ -5,12 +5,12 @@ import { z } from "zod";
 import { navFromCommand, pathForNav } from "../app/hooks/navigation-map";
 
 const ARGUE_VIEW_HELP =
-  'ARGUE IT views: "feed", "argument" (needs argumentId), "new-argument", "new-challenge" (optional argumentId), ' +
+  'ARGUE ROCK views: "feed", "argument" (needs argumentId), "new-argument", "new-challenge" (optional argumentId), ' +
   '"debate" or "verdict" (need competitionId), "review-queue" (optional tab "review" | "appeals"), ' +
   '"profile" (needs handle), "welcome", "rules", "markets", "market" (needs slug). Template views ("chat", "settings", "database", …) also work.';
 
 export default defineAction({
-  description: `Navigate the user's UI to an ARGUE IT screen or a path. ${ARGUE_VIEW_HELP} Writes a one-shot navigate command the UI consumes.`,
+  description: `Navigate the user's UI to an ARGUE ROCK screen or a path. ${ARGUE_VIEW_HELP} Writes a one-shot navigate command the UI consumes.`,
   schema: z.object({
     view: z.string().optional().describe(`View name to open. ${ARGUE_VIEW_HELP}`),
     path: z.string().optional().describe("Router-local URL path to open, e.g. /c/<competitionId>/verdict"),
@@ -28,7 +28,7 @@ export default defineAction({
       throw new Error("At least --view or --path is required.");
     }
     const nav: Record<string, string> = {};
-    // ARGUE IT views resolve to a concrete path here so the UI never has to guess a record.
+    // ARGUE ROCK views resolve to a concrete path here so the UI never has to guess a record.
     const argue = args.path ? null : navFromCommand(args);
     if (argue) {
       Object.assign(nav, argue);
